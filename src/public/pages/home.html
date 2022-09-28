@@ -3,7 +3,7 @@
 <div id="home-basic">
     <div id="home-picture"></div>
     <div id="home-info">
-        <div id="home-info-name">Hey! I'm %fullName%</div>
+        <div id="home-info-name">Hey! I'm <span style="color: #e74c3c;">%fullName%</span></div>
         <div id="home-info-about">%info.smallAbout%</div>
         <div id="home-info-socials">%socialLinks%</div>
     </div>
@@ -16,10 +16,16 @@
     <div id="home-aboutMe-text">%info.longAbout%</div>
 </div>
 
-
+<div id="resumeButton">
+    Download My Resume
+</div>
 
 <!-- projects should be dynamically created and just have and array that adds the icons from above
 so above %tech.list% isn't really needed -->
 
-
-%tech.all%
+<div id="techStack">
+    <div id="techStack-title">Technologies</div>
+    <div id="techStack-tiles">
+        %tech.all%
+    </div>    
+</div>

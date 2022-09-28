@@ -69,11 +69,15 @@ html{
 .techContainer{
     height: 100px;
     padding: 5px 5px;
-    border: 1px solid black;
     float: left;
+    opacity: 0.8;
+}
+.techContainer:hover{
+    opacity: 1.0;
+    cursor: pointer;
 }
 .techLogo{
-    width: 64px;
+    min-width: 64px;
     height: 64px;
     margin: 0px auto;
     background-size: contain;
@@ -101,7 +105,7 @@ html{
 ** Home
 ************************************************************/
 
-#home-basic, #home-aboutMe{
+#home-basic, #home-aboutMe, #techStack{
     width: 80%;
     margin: 20px auto;
     max-width: 800px;
@@ -126,6 +130,7 @@ html{
 
 #home-info-about{
     text-align: center;
+    font-size: 20px;
 }
 
 #home-info-name{
@@ -133,21 +138,39 @@ html{
     text-align: center;
 }
 
-#home-info-socials{
+#home-info-socials, #techStack-tiles{
     width: 100%;
-    margin: 10px auto;
+    margin: 10px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
-#home-aboutMe-title{
-    text-align: center;
-    font-size: 30px;
+#home-aboutMe-title, #techStack-title{
+    font-size: 35px;
+    font-style: italic;
 }
 
 #home-aboutMe-text{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#resumeButton{
+    margin: 5px auto;
+    width: 250px;
+    height: 45px;
+    line-height: 45px;
     text-align: center;
-    margin-top: 15px;
+    background-color: #3498db;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+#resumeButton:hover{
+    cursor: pointer;
+    background-color: #2980b9;
 }

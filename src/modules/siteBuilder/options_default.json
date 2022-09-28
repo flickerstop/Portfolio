@@ -25,13 +25,20 @@
         }
     ],
     "tech":[
-        { "show":true, "name":"MySQL", "imageURL":"https://i.imgur.com/H6c0eBq.png", "link":"" },
-        { "show":true, "name":"MySQL", "imageURL":"https://i.imgur.com/H6c0eBq.png", "link":"" },
-        { "show":false, "name":"", "imageURL":"", "link":"" },
-        { "show":false, "name":"", "imageURL":"", "link":"" },
-        { "show":false, "name":"", "imageURL":"", "link":"" },
-        { "show":false, "name":"", "imageURL":"", "link":"" },
-        { "show":false, "name":"", "imageURL":"", "link":"" },
+        { "show":true, "name":"JavaScript", "imageURL":"./images/js.png", "link":"" },
+        { "show":true, "name":"HTML", "imageURL":"./images/html.png", "link":"" },
+        { "show":true, "name":"CSS", "imageURL":"./images/css.png", "link":"" },
+        { "show":true, "name":"Node.js", "imageURL":"./images/nodejs.png", "link":"" },
+        { "show":true, "name":"JSON", "imageURL":"./images/json.png", "link":"" },
+        { "show":true, "name":"MongoDB", "imageURL":"./images/mongodb.png", "link":"" },
+        { "show":true, "name":"Java", "imageURL":"./images/java.png", "link":"" },
+        { "show":true, "name":"Electron.js", "imageURL":"./images/electron.png", "link":"" },
+        { "show":true, "name":"D3.js", "imageURL":"./images/d3.png", "link":"" },
+        { "show":true, "name":"Discord.js", "imageURL":"./images/discordjs.png", "link":"" },
+        { "show":true, "name":"PixiJS", "imageURL":"./images/pixijs.png", "link":"" },
+        { "show":true, "name":"Express.js", "imageURL":"./images/express.png", "link":"" },
+        { "show":true, "name":"Git", "imageURL":"./images/git.png", "link":"" },
+        { "show":true, "name":"Photoshop", "imageURL":"./images/photoshop.png", "link":"" },
         { "show":false, "name":"", "imageURL":"", "link":"" },
         { "show":false, "name":"", "imageURL":"", "link":"" }
     ]
