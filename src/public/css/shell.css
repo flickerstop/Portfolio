@@ -1,6 +1,12 @@
 
+
+@font-face {
+    font-family: "VarelaRound";
+    src: url("./../fonts/VarelaRound-Regular.ttf");
+}
+
 * {
-    font-family: Varela Round,sans-serif;
+    font-family: "VarelaRound",sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -23,6 +29,7 @@ html{
 #topBar div{
     float: left;
     padding: 0px 10px;
+    font-weight: bold;
     font-size: 25px;
     margin: 0px 2px;
     color: black;
@@ -57,11 +64,90 @@ html{
 }
 
 /***********************************************************
+** Tech
+************************************************************/
+.techContainer{
+    height: 100px;
+    padding: 5px 5px;
+    border: 1px solid black;
+    float: left;
+}
+.techLogo{
+    width: 64px;
+    height: 64px;
+    margin: 0px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.techText{
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/***********************************************************
 ** Main Content
 ************************************************************/
 
 #mainContent{
     position: absolute;
-    top: 55px;
+    top: 70px;
     width: 100%;
+}
+
+
+/***********************************************************
+** Home
+************************************************************/
+
+#home-basic, #home-aboutMe{
+    width: 80%;
+    margin: 20px auto;
+    max-width: 800px;
+}
+#home-info{
+    margin-left: 300px;
+    padding-top: 70px;
+    width: calc(100% - 300px);
+}
+
+#home-picture{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #2ecc71;
+    margin-right: 50px;
+    float: left;
+}
+
+#home-info-about{
+    text-align: center;
+}
+
+#home-info-name{
+    font-size: 40px;
+    text-align: center;
+}
+
+#home-info-socials{
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+#home-aboutMe-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+#home-aboutMe-text{
+    text-align: center;
+    margin-top: 15px;
 }

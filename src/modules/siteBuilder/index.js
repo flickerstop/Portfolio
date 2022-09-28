@@ -139,6 +139,17 @@ function parsePage(pageObject){
         page = page.replace(/%socialLinks%/gm,socialLinks);
     }
 
+    // Check for tech.all
+    if(page.includes("%tech.all%")){
+        let techString = "";
+        for(let tech of options.tech){
+            if(!tech.show)continue;
+
+            techString += `<div class="techContainer"><div class="techLogo" style="background-image:url('${tech.imageURL}')"></div><div class="techText">${tech.name}</div></div>`;
+        }
+
+        page = page.replace(/%tech.all%/gm,techString);
+    }
 
     ///////////////////
     return page;

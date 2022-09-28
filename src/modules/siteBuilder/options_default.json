@@ -25,13 +25,14 @@
         }
     ],
     "tech":[
-        { "show":false, "name":"", "imageURL":"" },
-        { "show":false, "name":"", "imageURL":"" },
-        { "show":false, "name":"", "imageURL":"" },
-        { "show":false, "name":"", "imageURL":"" },
-        { "show":false, "name":"", "imageURL":"" },
-        { "show":false, "name":"", "imageURL":"" },
-        { "show":false, "name":"", "imageURL":"" },
-        { "show":false, "name":"", "imageURL":"" }
+        { "show":true, "name":"MySQL", "imageURL":"https://i.imgur.com/H6c0eBq.png", "link":"" },
+        { "show":true, "name":"MySQL", "imageURL":"https://i.imgur.com/H6c0eBq.png", "link":"" },
+        { "show":false, "name":"", "imageURL":"", "link":"" },
+        { "show":false, "name":"", "imageURL":"", "link":"" },
+        { "show":false, "name":"", "imageURL":"", "link":"" },
+        { "show":false, "name":"", "imageURL":"", "link":"" },
+        { "show":false, "name":"", "imageURL":"", "link":"" },
+        { "show":false, "name":"", "imageURL":"", "link":"" },
+        { "show":false, "name":"", "imageURL":"", "link":"" }
     ]
 }
