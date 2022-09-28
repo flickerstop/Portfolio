@@ -1,0 +1,37 @@
+
+{
+    "windowName": "Template",
+    "info":{
+        "fullName": "First LastName",
+        "smallAbout": "Little About Message...",
+        "longAbout": "Long message about me..."
+    },
+    "links":{
+        "github": "https://github.com/",
+        "linkedin": "https://www.linkedin.com/in/"
+    },
+    "pages":[
+        {
+            "title":"Home","link":"",
+            "path": "public/pages/home.html"
+        },
+        {
+            "title":"Projects","link":"projects",
+            "path": "public/pages/projects.html"
+        },
+        {
+            "title":"About","link":"about",
+            "path": "public/pages/about.html"
+        }
+    ],
+    "tech":[
+        { "show":false, "name":"", "imageURL":"" },
+        { "show":false, "name":"", "imageURL":"" },
+        { "show":false, "name":"", "imageURL":"" },
+        { "show":false, "name":"", "imageURL":"" },
+        { "show":false, "name":"", "imageURL":"" },
+        { "show":false, "name":"", "imageURL":"" },
+        { "show":false, "name":"", "imageURL":"" },
+        { "show":false, "name":"", "imageURL":"" }
+    ]
+}

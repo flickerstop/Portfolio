@@ -1,0 +1,67 @@
+
+* {
+    font-family: Varela Round,sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #ecf0f1;
+}
+
+
+/***********************************************************
+** Top Bar
+************************************************************/
+#topBar{
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    padding: 15px;
+}
+#topBar div{
+    float: left;
+    padding: 0px 10px;
+    font-size: 25px;
+    margin: 0px 2px;
+    color: black;
+}
+#topBar div:hover{
+    border-bottom: 2px solid #3498db;
+    cursor: pointer;
+}
+
+#topBar div.selected{
+    border-bottom: 2px solid #2ecc71;
+    cursor: pointer;
+}
+
+/***********************************************************
+** Socials
+************************************************************/
+.social-link{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    margin: 0px 5px;
+}
+.social-link.github{
+    background-image: url("/images/GitHub-Mark-64px.png");
+}
+.social-link.linkedin{
+    background-image: url("/images/64px-LinkedIn_logo_initials.png");
+}
+
+/***********************************************************
+** Main Content
+************************************************************/
+
+#mainContent{
+    position: absolute;
+    top: 55px;
+    width: 100%;
+}
