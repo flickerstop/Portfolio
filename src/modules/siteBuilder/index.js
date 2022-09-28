@@ -122,22 +122,29 @@ function parsePage(pageObject){
 
     /////////////////////////
     // Projects
+
+    // Loop through the projects and give them all ids
+    let i = 0;
+    for(let project of options.projects){
+        project.id = i++;
+    }
+
     if(mainContent.includes("%projects.cards%")){
         let projectCards = ``;
         // Loop through the projects
         for(let project of options.projects){
             let card = `<div class="projectCard">\n`;
 
-            card += `<div class="projectCard-readMoreOverlay">Read More</div>\n`;
+            card += `<div class="projectCard-readMoreOverlay" onclick='projects.openOverlay(${project.id})'>Read More</div>\n`;
 
             // Add the image(s)
-            card += `<div class="projectCard-image image" style="background-image:url('${project.images[0]}')"></div>\n`;
+            card += `<div class="projectCard-image image" style="background-image:url('${project.images[0].url}')"></div>\n`;
 
             // Add the title
             card += `<div class="projectCard-title">${project.name}</div>\n`;
 
             // Add the description
-            card += `<div class="projectCard-description">${project.description}</div>\n`;
+            card += `<div class="projectCard-description">${project.descriptions.short}</div>\n`;
 
 
             // Add the tech stack container
@@ -162,14 +169,6 @@ function parsePage(pageObject){
         mainContent = mainContent.replace(/%projects\.cards%/gm,projectCards);
     }
 
-
-    // "projects":[
-    //     {
-    //         "name": "Project Name", "description": "Description about this project",
-    //         "tech": ["JavaScript","HTML","CSS"],
-    //         "images": [""]
-    //     }
-    // ]
 
     /***********************************************************
     ** Combined
@@ -211,6 +210,12 @@ function parsePage(pageObject){
 
         page = page.replace(/%tech.all%/gm,techString);
     }
+
+
+    /***********************************************************
+    ** Add the json data
+    ************************************************************/
+    page += `\n\n<script>\nvar resumeData = ${JSON.stringify(options)}\n</script>`;
 
     ///////////////////
     return page;

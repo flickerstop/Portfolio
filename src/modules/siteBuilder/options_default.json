@@ -46,10 +46,33 @@
     ],
     "projects":[
         {
-            "name": "Project Name", "description": "Description about this project",
+            "name": "My First Project", 
+            "descriptions": {
+                "long": "A very long description",
+                "short": "A shorter description"
+            },
             "tech": ["JavaScript","HTML","CSS"],
-            "images": ["https://i.imgur.com/iNMXsRC.png"],
+            "images": [{
+                "url":"https://i.imgur.com/iNMXsRC.png",
+                "description": "Image description"
+            },{
+                "url":"https://i.imgur.com/yyFfMi0.png",
+                "description": null
+            }],
             "github": "null"
+        },
+        {
+            "name": "My Second Project", 
+            "descriptions": {
+                "long": "A very long description",
+                "short": "A shorter description"
+            },
+            "tech": ["Node.js","MongoDB","D3.js"],
+            "images": [{
+                "url":"https://i.imgur.com/iNMXsRC.png",
+                "description": "Image description"
+            }],
+            "github": null
         }
     ]
 }

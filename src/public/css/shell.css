@@ -1,5 +1,9 @@
 
 
+/***********************************************************
+** Globals
+************************************************************/
+
 @font-face {
     font-family: "VarelaRound";
     src: url("./../fonts/VarelaRound-Regular.ttf");
@@ -20,6 +24,27 @@ html{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+
+.arrowRight, .arrowLeft{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.arrowRight{
+    background-image: url("/images/icons/arrows/right_shadow.png");
+}
+.arrowRight:hover{
+    background-image: url("/images/icons/arrows/rightBlue_shadow.png");
+    cursor: pointer;
+}
+.arrowLeft{
+    background-image: url("/images/icons/arrows/left_shadow.png");
+}
+.arrowLeft:hover{
+    background-image: url("/images/icons/arrows/leftBlue_shadow.png");
+    cursor: pointer;
 }
 
 

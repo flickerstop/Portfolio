@@ -5,10 +5,25 @@
 </div>
 
 <div id="projectOverlay">
-    <div id="projectOverlay-blackout"></div>
+    <div id="projectOverlay-blackout" onclick="projects.closeOverlay()"></div>
     <div id="projectOverlay-container">
-        <div id="poc-images"></div>
+        <div id="poc-close" onclick="projects.closeOverlay()">x</div>
+        <div id="poc-images">
+            <div id="poc-images-left" class="arrowLeft" onclick="projects.previousImage()"></div>
+            <div id="poc-images-right" class="arrowRight" onclick="projects.nextImage()"></div>
+            <div id="poc-images-container" class="image"></div>
+            <div id="poc-images-text"></div>
+        </div>
         <div id="poc-title">Project Title</div>
         <div id="poc-description">A really long project description...</div>
+        <div id="poc-rightContainer">
+            <div id="poc-divider"></div>
+            <div id="poc-tech-title">Tech Stack:</div>
+            <div id="poc-tech"></div>
+            <div id="poc-github">
+                <div id="poc-github-icon" class="image"></div>
+                <div id="poc-github-text">Open GitHub</div>
+            </div>
+        </div>
     </div>
 </div>
