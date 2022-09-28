@@ -2,6 +2,7 @@
 
 const fs = require("fs-extra");
 const path = require("path");
+const console = require("JrModules/jrConsole");
 
 let options = null;
 let shellPath = null;
@@ -57,9 +58,11 @@ module.exports = class{
  */
 function loadOptions(){
     // Check if we have custom options then use them
-    if(fs.existsSync("./options.json")){
+    if(fs.existsSync(path.join(__dirname,"./options.json"))){
+        console.log("Loaded personal options");
         options = fs.readJSONSync(path.join(__dirname,"./options.json"));
     }else{
+        console.log("Loaded default options");
         options = fs.readJSONSync(path.join(__dirname,"./options_default.json"));
     }
 }
@@ -98,6 +101,8 @@ function parsePage(pageObject){
     // Load the main content for the page
     let mainContent = pageObject.page;
     
+    /////////////////////////
+    // Home
 
     // check if small about exists
     if(mainContent.includes("%info.smallAbout%")){
@@ -109,6 +114,62 @@ function parsePage(pageObject){
         mainContent = mainContent.replace(/%info\.longAbout%/gm,options.info.longAbout);
     }
 
+    
+    // check if profile picture exists
+    if(mainContent.includes("%profilePicture%")){
+        mainContent = mainContent.replace(/%profilePicture%/gm,options.info.picture);
+    }
+
+    /////////////////////////
+    // Projects
+    if(mainContent.includes("%projects.cards%")){
+        let projectCards = ``;
+        // Loop through the projects
+        for(let project of options.projects){
+            let card = `<div class="projectCard">\n`;
+
+            card += `<div class="projectCard-readMoreOverlay">Read More</div>\n`;
+
+            // Add the image(s)
+            card += `<div class="projectCard-image image" style="background-image:url('${project.images[0]}')"></div>\n`;
+
+            // Add the title
+            card += `<div class="projectCard-title">${project.name}</div>\n`;
+
+            // Add the description
+            card += `<div class="projectCard-description">${project.description}</div>\n`;
+
+
+            // Add the tech stack container
+            card += `<div class="projectCard-tech">\n`;
+
+            // For each tech stack
+            for(let tech of project.tech){
+                // Find the tech data
+                let techData = options.tech.find(x=>x.name.toLowerCase() == tech.toLowerCase());
+
+                // If we have this tech added
+                if(techData != undefined){
+                    card += `<div class="projectCard-tech-logo image" style="background-image:url('${techData.imageURL}')"></div>`;
+                }
+            }
+
+            card += `</div>\n</div>\n\n`;
+
+            projectCards += card;
+        }
+
+        mainContent = mainContent.replace(/%projects\.cards%/gm,projectCards);
+    }
+
+
+    // "projects":[
+    //     {
+    //         "name": "Project Name", "description": "Description about this project",
+    //         "tech": ["JavaScript","HTML","CSS"],
+    //         "images": [""]
+    //     }
+    // ]
 
     /***********************************************************
     ** Combined

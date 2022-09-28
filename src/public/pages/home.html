@@ -1,7 +1,7 @@
 
 
-<div id="home-basic">
-    <div id="home-picture"></div>
+<div id="home-basic" class="mainContentContainer">
+    <div id="home-picture" style="background-image: url('%profilePicture%');"></div>
     <div id="home-info">
         <div id="home-info-name">Hey! I'm <span style="color: #e74c3c;">%fullName%</span></div>
         <div id="home-info-about">%info.smallAbout%</div>
@@ -11,7 +11,7 @@
 
 <div style="clear:both;"></div>
 
-<div id="home-aboutMe"> 
+<div id="home-aboutMe" class="mainContentContainer"> 
     <div id="home-aboutMe-title">About me</div>
     <div id="home-aboutMe-text">%info.longAbout%</div>
 </div>
@@ -23,7 +23,7 @@
 <!-- projects should be dynamically created and just have and array that adds the icons from above
 so above %tech.list% isn't really needed -->
 
-<div id="techStack">
+<div id="techStack" class="mainContentContainer">
     <div id="techStack-title">Technologies</div>
     <div id="techStack-tiles">
         %tech.all%

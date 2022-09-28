@@ -1,0 +1,142 @@
+
+
+
+
+
+
+/***********************************************************
+** Projects Cards
+************************************************************/
+/* #region */
+
+#projectsContainer{
+    width: 80%;
+    margin: 20px auto;
+    min-width: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.projectCard{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%), 0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+    overflow: hidden;
+}
+
+.projectCard:hover .projectCard-readMoreOverlay{
+    pointer-events: all;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.projectCard-readMoreOverlay{
+    pointer-events: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.0;
+    transition: opacity 0.1s linear 0s;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("/images/icons/readMore.png");
+    color: white;
+    text-align: center;
+    line-height: 480px;
+}
+
+.projectCard-image{
+    width: 100%;
+    height: 200px;
+}
+
+.projectCard-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0px 5px 25px;
+}
+
+.projectCard-description{
+    width: 380px;
+    height: 120px;
+    margin: 0px 10px;
+}
+
+.projectCard-tech{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.projectCard-tech-logo{
+    height: 36px;
+    width: 36px;
+}
+
+/* #endregion */
+
+
+
+/***********************************************************
+** Project Overlay
+************************************************************/
+/* #region */
+#projectOverlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#projectOverlay-blackout{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+}
+
+#projectOverlay-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 800px;
+    min-width: 500px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#poc-images{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+#poc-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0px 5px 25px;
+}
+
+#poc-description{
+    
+}
+
+/* #endregion */

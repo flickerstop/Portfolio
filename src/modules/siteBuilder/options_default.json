@@ -4,9 +4,11 @@
     "info":{
         "fullName": "First LastName",
         "smallAbout": "Little About Message...",
-        "longAbout": "Long message about me..."
+        "longAbout": "Long message about me...",
+        "picture": "./images/defaults/profilePicture.jpg"
     },
     "links":{
+        "resume": "",
         "github": "https://github.com/",
         "linkedin": "https://www.linkedin.com/in/"
     },
@@ -25,21 +27,29 @@
         }
     ],
     "tech":[
-        { "show":true, "name":"JavaScript", "imageURL":"./images/js.png", "link":"" },
-        { "show":true, "name":"HTML", "imageURL":"./images/html.png", "link":"" },
-        { "show":true, "name":"CSS", "imageURL":"./images/css.png", "link":"" },
-        { "show":true, "name":"Node.js", "imageURL":"./images/nodejs.png", "link":"" },
-        { "show":true, "name":"JSON", "imageURL":"./images/json.png", "link":"" },
-        { "show":true, "name":"MongoDB", "imageURL":"./images/mongodb.png", "link":"" },
-        { "show":true, "name":"Java", "imageURL":"./images/java.png", "link":"" },
-        { "show":true, "name":"Electron.js", "imageURL":"./images/electron.png", "link":"" },
-        { "show":true, "name":"D3.js", "imageURL":"./images/d3.png", "link":"" },
-        { "show":true, "name":"Discord.js", "imageURL":"./images/discordjs.png", "link":"" },
-        { "show":true, "name":"PixiJS", "imageURL":"./images/pixijs.png", "link":"" },
-        { "show":true, "name":"Express.js", "imageURL":"./images/express.png", "link":"" },
-        { "show":true, "name":"Git", "imageURL":"./images/git.png", "link":"" },
-        { "show":true, "name":"Photoshop", "imageURL":"./images/photoshop.png", "link":"" },
+        { "show":true, "name":"JavaScript", "imageURL":"./images/logos/js.png", "link":"" },
+        { "show":true, "name":"HTML", "imageURL":"./images/logos/html.png", "link":"" },
+        { "show":true, "name":"CSS", "imageURL":"./images/logos/css.png", "link":"" },
+        { "show":true, "name":"Node.js", "imageURL":"./images/logos/nodejs.png", "link":"" },
+        { "show":true, "name":"JSON", "imageURL":"./images/logos/json.png", "link":"" },
+        { "show":true, "name":"MongoDB", "imageURL":"./images/logos/mongodb.png", "link":"" },
+        { "show":true, "name":"Java", "imageURL":"./images/logos/java.png", "link":"" },
+        { "show":true, "name":"Electron.js", "imageURL":"./images/logos/electron.png", "link":"" },
+        { "show":true, "name":"D3.js", "imageURL":"./images/logos/d3.png", "link":"" },
+        { "show":true, "name":"Discord.js", "imageURL":"./images/logos/discordjs.png", "link":"" },
+        { "show":true, "name":"PixiJS", "imageURL":"./images/logos/pixijs.png", "link":"" },
+        { "show":true, "name":"Express.js", "imageURL":"./images/logos/express.png", "link":"" },
+        { "show":true, "name":"Git", "imageURL":"./images/logos/git.png", "link":"" },
+        { "show":true, "name":"Photoshop", "imageURL":"./images/logos/photoshop.png", "link":"" },
         { "show":false, "name":"", "imageURL":"", "link":"" },
         { "show":false, "name":"", "imageURL":"", "link":"" }
+    ],
+    "projects":[
+        {
+            "name": "Project Name", "description": "Description about this project",
+            "tech": ["JavaScript","HTML","CSS"],
+            "images": ["https://i.imgur.com/iNMXsRC.png"],
+            "github": "null"
+        }
     ]
 }
