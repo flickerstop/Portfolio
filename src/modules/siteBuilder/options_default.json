@@ -60,19 +60,21 @@
                 "description": null
             }],
             "github": "null"
-        },
-        {
+        },{
             "name": "My Second Project", 
             "descriptions": {
                 "long": "A very long description",
                 "short": "A shorter description"
             },
-            "tech": ["Node.js","MongoDB","D3.js"],
+            "tech": ["JavaScript","HTML","CSS"],
             "images": [{
                 "url":"https://i.imgur.com/iNMXsRC.png",
                 "description": "Image description"
+            },{
+                "url":"https://i.imgur.com/yyFfMi0.png",
+                "description": null
             }],
-            "github": null
+            "github": "null"
         }
     ]
 }

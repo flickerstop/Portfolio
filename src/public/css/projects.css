@@ -23,7 +23,7 @@
 
 .projectCard{
     position: relative;
-    width: 400px;
+    width: 350px;
     height: 400px;
     background-color: white;
     border-radius: 10px;
@@ -68,7 +68,7 @@
 }
 
 .projectCard-description{
-    width: 380px;
+    width: 330px;
     height: 120px;
     margin: 0px 10px;
 }
@@ -121,6 +121,7 @@
     width: 80%;
     height: 800px;
     min-width: 500px;
+    max-width: 1000px;
     background-color: #ecf0f1;
     border-radius: 10px;
     overflow: hidden;
