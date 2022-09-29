@@ -205,7 +205,7 @@ function parsePage(pageObject){
         for(let tech of options.tech){
             if(!tech.show)continue;
 
-            techString += `<div class="techContainer"><div class="techLogo" style="background-image:url('${tech.imageURL}')"></div><div class="techText">${tech.name}</div></div>`;
+            techString += `<a href="${tech.link}"><div class="techContainer"><div class="techLogo" style="background-image:url('${tech.imageURL}')"></div><div class="techText">${tech.name}</div></div></a>`;
         }
 
         page = page.replace(/%tech.all%/gm,techString);

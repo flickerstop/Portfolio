@@ -34,7 +34,7 @@ var projects = function(){
             // If we have this tech added
             if(techData != undefined){
 
-                let techLogo = techDiv.append("div");
+                let techLogo = techDiv.append("div").class("poc-tech-container");
 
                 techLogo.append("div")
                     .class("poc-tech-logo image")

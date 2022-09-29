@@ -126,3 +126,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 src/modules/siteBuilder/options.json
+
+
+src/public/personal/*
