@@ -55,6 +55,9 @@ var dom = function(){
         }(id,element);
     }
 
+    function changeLink(id,newLink){
+        document.getElementById(id).setAttribute('href', newLink);
+    }
 
     function changeText(id,newText){
         document.getElementById(id).innerHTML = newText;
@@ -78,12 +81,22 @@ var dom = function(){
         document.getElementById(id).style.backgroundImage = `url('${url}')`;
     }
 
+    function hide(id){
+        document.getElementById(id).style.display = "none";
+    }
+    function show(id){
+        document.getElementById(id).style.display = null;
+    }
+
     return{
         builder,
         text:changeText,
         disableButton,
         enableButton,
-        backgroundImage
+        backgroundImage,
+        changeLink,
+        hide,
+        show
     }
 }();
 

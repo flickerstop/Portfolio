@@ -49,11 +49,13 @@
     "projects":[
         {
             "name": "My First Project", 
+            "demoURL": null,
             "descriptions": {
                 "long": "A very long description",
                 "short": "A shorter description"
             },
             "tech": ["JavaScript","HTML","CSS"],
+            "showImage": 0,
             "images": [{
                 "url":"https://i.imgur.com/iNMXsRC.png",
                 "description": "Image description"
@@ -64,11 +66,13 @@
             "github": "null"
         },{
             "name": "My Second Project", 
+            "demoURL": null,
             "descriptions": {
                 "long": "A very long description",
                 "short": "A shorter description"
             },
             "tech": ["JavaScript","HTML","CSS"],
+            "showImage": 0,
             "images": [{
                 "url":"https://i.imgur.com/iNMXsRC.png",
                 "description": "Image description"

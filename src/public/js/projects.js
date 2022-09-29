@@ -15,12 +15,26 @@ var projects = function(){
         dom.text("poc-title",projectData.name);
         dom.text("poc-description",projectData.descriptions.long);
         
+        // Check if live demo
+        if(projectData.demoURL != null){
+            dom.show("poc-demo-link");
+            dom.changeLink("poc-demo-link",projectData.demoURL);
+        }else{
+            dom.hide("poc-demo-link");
+            dom.changeLink("poc-demo-link",null);
+        }
+
+        
 
         // Check if github
         if(projectData.github != null){
-            dom.enableButton("poc-github");
+            dom.enableButton("poc-github-link");
+            dom.text("poc-github-text","Open GitHub");
+            dom.changeLink("poc-github-link",projectData.github);
         }else{
-            dom.disableButton("poc-github");
+            dom.disableButton("poc-github-link");
+            dom.text("poc-github-text","No GitHub Link");
+            dom.changeLink("poc-github-link",null);
         }
 
 

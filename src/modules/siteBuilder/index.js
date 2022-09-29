@@ -138,7 +138,7 @@ function parsePage(pageObject){
             card += `<div class="projectCard-readMoreOverlay" onclick='projects.openOverlay(${project.id})'>Read More</div>\n`;
 
             // Add the image(s)
-            card += `<div class="projectCard-image image" style="background-image:url('${project.images[0].url}')"></div>\n`;
+            card += `<div class="projectCard-image image" style="background-image:url('${project.images[project.showImage].url}')"></div>\n`;
 
             // Add the title
             card += `<div class="projectCard-title">${project.name}</div>\n`;
@@ -205,7 +205,7 @@ function parsePage(pageObject){
         for(let tech of options.tech){
             if(!tech.show)continue;
 
-            techString += `<a href="${tech.link}"><div class="techContainer"><div class="techLogo" style="background-image:url('${tech.imageURL}')"></div><div class="techText">${tech.name}</div></div></a>`;
+            techString += `<a href="${tech.link}" target="_blank" rel="noopener noreferrer"><div class="techContainer"><div class="techLogo" style="background-image:url('${tech.imageURL}')"></div><div class="techText">${tech.name}</div></div></a>`;
         }
 
         page = page.replace(/%tech.all%/gm,techString);
