@@ -15,15 +15,18 @@
     "pages":[
         {
             "title":"Home","link":"",
-            "path": "public/pages/home.html"
+            "path": "public/pages/home.html",
+            "show": true
         },
         {
             "title":"Projects","link":"projects",
-            "path": "public/pages/projects.html"
+            "path": "public/pages/projects.html",
+            "show": true
         },
         {
             "title":"About","link":"about",
-            "path": "public/pages/about.html"
+            "path": "public/pages/about.html",
+            "show": true
         }
     ],
     "tech":[
@@ -63,7 +66,7 @@
                 "url":"https://i.imgur.com/yyFfMi0.png",
                 "description": null
             }],
-            "github": "null"
+            "github": null
         },{
             "name": "My Second Project", 
             "demoURL": null,
@@ -80,7 +83,7 @@
                 "url":"https://i.imgur.com/yyFfMi0.png",
                 "description": null
             }],
-            "github": "null"
+            "github": null
         }
     ]
 }

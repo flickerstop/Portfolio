@@ -90,6 +90,9 @@ function parsePage(pageObject){
     // Add the title bar pages
     let titleBarPages = "";
     for(let page of options.pages){
+        if(!page.show){
+            continue;
+        }
         titleBarPages += `<a href="/${page.link}"><div ${page.title == pageObject.pageData.title?`class="selected"`:``}>${page.title}</div></a>\n`;
     }
     page = page.replace(/%titleBarPages%/gm,titleBarPages);
@@ -150,6 +153,12 @@ function parsePage(pageObject){
             // Add the tech stack container
             card += `<div class="projectCard-tech">\n`;
 
+            
+            if(project.github != null){
+                // Add github to also show in the tech stack
+                project.tech.push("GitHub");
+            }
+
             // For each tech stack
             for(let tech of project.tech){
                 // Find the tech data
@@ -188,12 +197,12 @@ function parsePage(pageObject){
 
         // Add the github
         if(options.links.github != undefined){
-            socialLinks += `<a href="${options.links.github}"><div class="social-link github"></div></a>`;
+            socialLinks += `<a href="${options.links.github}" target="_blank" rel="noopener noreferrer"><div class="social-link github"></div></a>`;
         }
 
         // Add the linkedin
         if(options.links.linkedin != undefined){
-            socialLinks += `<a href="${options.links.linkedin}"><div class="social-link linkedin"></div></a>`;
+            socialLinks += `<a href="${options.links.linkedin}" target="_blank" rel="noopener noreferrer"><div class="social-link linkedin"></div></a>`;
         }
 
         page = page.replace(/%socialLinks%/gm,socialLinks);

@@ -39,6 +39,11 @@ app.use(bodyParser.urlencoded({ extended: true , limit: '8mb'}));
 
 // Build the routing
 for(let pageData of siteBuilder.options.pages){
+
+    if(!pageData.show){
+        continue;
+    }
+
     // Build the page
     pageData.page = new siteBuilder.page(pageData);
 

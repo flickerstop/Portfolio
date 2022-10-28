@@ -37,6 +37,7 @@ var projects = function(){
             dom.changeLink("poc-github-link",null);
         }
 
+        
 
         // Select the div for all the tech
         let techDiv = dom.builder("poc-tech").html(null);
